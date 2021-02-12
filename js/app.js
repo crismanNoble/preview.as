@@ -1,6 +1,9 @@
 $(document).ready(function(){
   console.log('hi');
 
+
+  
+
   function lookForTagValue(tag_key){
     console.log(tag_key);
     var $meta = $('.meta-tag[data-key="'+tag_key+'"]');
@@ -224,6 +227,12 @@ $(document).ready(function(){
       $('.meta').show()
     });
   });
+
+  var prefill = document.location.search.split('url=').length > 1 ?document.location.search.split('url=')[1] : false;
+  if(prefill) {
+    $('#url').val(prefill);
+    $('#url').parent().find('.js-submit').click();
+  }
 
 });
 console.log('hi');
