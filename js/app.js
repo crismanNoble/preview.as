@@ -82,7 +82,7 @@ $(document).ready(function(){
 
     var favicon = getFirstTagValue(['favicon']);
     if(favicon) {
-       $('.slack__favicon img').attr('src', favicon);
+      $('.slack__favicon img').attr('src', favicon);
       $('.slack__favicon img').show();
     }
    
@@ -191,6 +191,10 @@ $(document).ready(function(){
   $('.js-ajax').submit(function(e){
     e.preventDefault();
     var url = $('#url').val();
+
+    // indicate loading
+    // hide anything existing
+    
 
     var uri = 'https://fetch-meta-tags.glitch.me/?url='+url;
     $.get(uri).then(function(resp){
