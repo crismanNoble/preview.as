@@ -31,12 +31,12 @@
       <label>
         <input type="checkbox" id="slack" checked="true"> Slack
       </label>
-      <!-- <label>
-        <input type="checkbox"  id="linkedin"> LinkedIn
+      <label>
+        <input type="checkbox"  id="linkedin" checked="true"> LinkedIn
       </label>
       <label>
-        <input type="checkbox" id="google_search"> Google Search
-      </label> -->
+        <input type="checkbox" id="google_search" checked="true"> Google Search
+      </label>
       <label>
         <input type="checkbox" id="raw" checked="true"> Raw Tags
       </label>
@@ -114,10 +114,23 @@
         <section class="linkedin preview" style="display: none;">
   <h3>LinkedIn <a href="https://www.linkedin.com/post-inspector/" class="info-btn" target="_blank">i</a></h3>
   <div class="linkedin__card" style="display: none">
-    <div class="linkedin__image"><img src="" /></div>
+    <div class="linkedin__image"></div>
     <div class="linkedin__content">
       <div class="linkedin__page-title"></div>
       <div class="linkedin__domain-title"></div>
+    </div>
+  </div>
+</section>
+        <section class="google_search preview" style="display: none;">
+  <h3>Google <a href="https://developers.google.com/search/docs/advanced/crawling/special-tags" class="info-btn" target="_blank">i</a></h3>
+  <div class="google_search__card google__card" style="display: none">
+    <div class="google__domain-box">
+      <div class="google__favicon"><img src="" style="display: none"></div>
+      <div class="google__domain"></div>
+    </div>
+    <div class="google__title"></div>
+    <div class="google__content">
+      <div class="google__description"></div>
     </div>
   </div>
 </section>
