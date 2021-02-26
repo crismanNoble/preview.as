@@ -528,6 +528,25 @@ $(document).ready(function(){
     });
   });
 
+  $('.services input').change(function(){
+    var service = $(this).attr('id');
+    var isServiceChecked = isChecked('#'+service);
+    console.log(isServiceChecked,service);
+    if(isServiceChecked) {
+      fillInCard(service);
+      $('.'+service).show();
+    } else {
+      $('.'+service).hide();
+    }
+    if(service == 'raw') {
+      if(isServiceChecked) {
+        $('.meta').show();
+      } else {
+        $('.meta').hide();
+      }
+    }
+  });
+
  
 
 });
